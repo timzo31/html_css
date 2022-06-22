@@ -4,5 +4,7 @@
   "editor.formatOnSave": true,
   "files.autoSave": "onFocusChange",
   "editor.tabSize": 2,
-  "editor.tabCompletion": "on"
+  "editor.tabCompletion": "on",
+  "editor.formatOnType": true,
+  "editor.formatOnSaveMode": "modifications"
 }

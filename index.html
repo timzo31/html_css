@@ -11,35 +11,53 @@
     <title>HTML-CSS Basics</title>
   </head>
   <body>
-    <div class="container">
+    
+    <header>
+      <h1>📘 TimDev</h1>
+      <nav>
+        <ul>
+          <li><a href="pages/portfolio.html">Portfolio</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
+          <li><a href="pages/challenges/index.html">Challenges</a>
+          <ul>
+            <li><a href="pages/challenges/challenge-1.html">Challenge 1</a></li>
+
+            <li><a href="pages/challenges/challenge-2.html">Challenge 2</a></li>
+          </ul>
+          </li>
+          <li><a href="pages/html.html">HTML</a></li>
+          <li><a href="pages/flexbox.html">Flexbox</a></li>
+          <li><a href="pages/css-grid.html">CSS Grid</a></li>
+          <li><a href="pages/javascript.html">Javascript</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <article>
       <header>
-        <h1>📘 The Code Magazine</h1>
+        <h2>The Basic Language of the Web: HTML</h2>
+        <img src="img/laura-jones.jpg" alt="Laura-Jones" />
+        <p>
+          Posted by <strong>Laura Jones</strong> on Monday, June 21<sup
+            >st</sup
+          >
+          2017
+        </p>
+
+        <img src="img/post-img.jpg" alt="Posted image" />
       </header>
-
-      <section>
-        <div>
-          <h2>The Basic Language of the Web: HTML</h2>
-          <img src="img/laura-jones.jpg" alt="Laura-Jones" />
-          <p>
-            Posted by <strong>Laura Jones</strong> on Monday, June 21<sup
-              >st</sup
-            >
-            2017
-          </p>
-
-          <img src="img/post-img.jpg" alt="Posted image" />
-
-          <p>
-            All modern websites and web applications are built using three
-            fundamental technologies: HTML, CSS and JavaScript. These are the
-            languages of the web.
-          </p>
-          <p>
-            In this post, let's focus on HTML. We will learn what HTML is all
-            about, and why you too should learn it.
-          </p>
-        </div>
-      </section>
+      <div class="content">
+        <p>
+          All modern websites and web applications are built using three
+          fundamental technologies: HTML, CSS and JavaScript. These are the
+          languages of the web.
+        </p>
+        <p>
+          In this post, let's focus on HTML. We will learn what HTML is all
+          about, and why you too should learn it.
+        </p>
+      </div>
+    
       <div>
         <h3>What is HTML ?</h3>
         <p>
@@ -60,6 +78,13 @@
           <li>The closing tag</li>
           <li>the actual element</li>
         </ol>
+
+        <p>
+          You can learn more on
+          <a href="https://developer.mozilla.org/fr/" target="_blank"
+            >MDN website</a
+          >
+        </p>
       </div>
 
       <div>
@@ -81,10 +106,20 @@
 
         <p>Hopefully you learned something new here. See you next time!</p>
       </div>
+    </section>
 
-      <footer></footer>
-    </div>
+    <aside>
+      <h3>Related posts</h3>
+      <ul>
+        <li><a href="#"><img src="img/related-1.jpg" alt="Related-1" width="75px" height="75px">How to learn web Develeopment</a> <strong>By TIMERA</strong></li>
+        <li><a href="#"><img src="img/related-2.jpg" alt="related-2" width="75px" height="75px">The unknown Powers of CSS</a> <strong>By TIMERA</strong></li>
+        <li><a href="#"><img src="img/related-3.jpg" alt="Related-3" width="75px" height="75px">Why Javascript is Awesome</a> <strong>By TIMERA</strong></li>
+      </ul>
+    </aside>
 
+    <footer>
+      Copyright &copy; 2022 by TimDev, e-mail: <a href="mailto:madty31@gmail.com" target="_blank" >madty31@gmail.com</a>, Phone number: <a href="tel:15340438330" target="_blank" >15340438330</a>
+    </footer>
     <script defer src="js/script.js"></script>
   </body>
 </html>
