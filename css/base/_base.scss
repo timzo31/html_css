@@ -1,0 +1,21 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  //background: #1c1b1b;
+}
+
+.container {
+}
