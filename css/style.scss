@@ -2,8 +2,12 @@
 @import "base/base";
 @import "base/utilities";
 
-//@import "";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/aside";
+
 @import "components/article";
+@import "components/navbar";
 //
 
 

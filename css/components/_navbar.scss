@@ -1,0 +1,20 @@
+.navbar {
+  //display: inline-block;
+
+  &_items {
+    list-style: none;
+  }
+
+  &_link {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+
+  &_dropdown {
+
+
+    &-link {
+      display: none;
+    }
+  }
+}

@@ -12,23 +12,23 @@
   </head>
   <body>
     
-    <header>
-      <h1>📘 TimDev</h1>
-      <nav>
-        <ul>
-          <li><a href="pages/portfolio.html">Portfolio</a></li>
-          <li><a href="pages/blog.html">Blog</a></li>
-          <li><a href="pages/challenges/index.html">Challenges</a>
-          <ul>
-            <li><a href="pages/challenges/challenge-1.html">Challenge 1</a></li>
+    <header class="main-header">
+      <h1 class="logo">📘 TimDev</h1>
+      <nav class="navbar">
+        <ul class="navbar_items">
+          <li class="navbar_link"><a href="pages/portfolio.html">Portfolio</a></li>
+          <li class="navbar_link"><a href="pages/blog.html">Blog</a></li>
+          <li class="navbar_link"><a href="pages/challenges/index.html">Challenges</a>
+          <ul class="navbar_items navbar_dropdown">
+            <li class="navbar_dropdown-link"><a href="pages/challenges/challenge-1.html">Challenge 1</a></li>
 
-            <li><a href="pages/challenges/challenge-2.html">Challenge 2</a></li>
+            <li class="navbar_dropdown-link"><a href="pages/challenges/challenge-2.html">Challenge 2</a></li>
           </ul>
           </li>
-          <li><a href="pages/html.html">HTML</a></li>
-          <li><a href="pages/flexbox.html">Flexbox</a></li>
-          <li><a href="pages/css-grid.html">CSS Grid</a></li>
-          <li><a href="pages/javascript.html">Javascript</a></li>
+          <li class="navbar_link"><a href="pages/html.html">HTML</a></li>
+          <li class="navbar_link"><a href="pages/flexbox.html">Flexbox</a></li>
+          <li class="navbar_link"><a href="pages/css-grid.html">CSS Grid</a></li>
+          <li class="navbar_link"><a href="pages/javascript.html">Javascript</a></li>
         </ul>
       </nav>
     </header>
@@ -37,7 +37,7 @@
       <header>
         <h2>The Basic Language of the Web: HTML</h2>
         <img src="img/laura-jones.jpg" alt="Laura-Jones" />
-        <p>
+        <p id="author">
           Posted by <strong>Laura Jones</strong> on Monday, June 21<sup
             >st</sup
           >
@@ -109,16 +109,17 @@
     </section>
 
     <aside>
-      <h3>Related posts</h3>
-      <ul>
-        <li><a href="#"><img src="img/related-1.jpg" alt="Related-1" width="75px" height="75px">How to learn web Develeopment</a> <strong>By TIMERA</strong></li>
-        <li><a href="#"><img src="img/related-2.jpg" alt="related-2" width="75px" height="75px">The unknown Powers of CSS</a> <strong>By TIMERA</strong></li>
-        <li><a href="#"><img src="img/related-3.jpg" alt="Related-3" width="75px" height="75px">Why Javascript is Awesome</a> <strong>By TIMERA</strong></li>
+      <h4>Related posts</h4>
+      <ul class="related">
+        <li><a href="#"><img src="img/related-1.jpg" alt="Related-1" width="75px" height="75px">How to learn web Develeopment</a> <span class="related-author">By TIMERA</span></li>
+        <li><a href="#"><img src="img/related-2.jpg" alt="related-2" width="75px" height="75px">The unknown Powers of CSS</a> <span class="related-author">By TIMERA</span></li>
+        <li><a href="#"><img src="img/related-3.jpg" alt="Related-3" width="75px" height="75px">Why Javascript is Awesome</a> <span class="related-author">By TIMERA</span></li>
       </ul>
     </aside>
 
     <footer>
-      Copyright &copy; 2022 by TimDev, e-mail: <a href="mailto:madty31@gmail.com" target="_blank" >madty31@gmail.com</a>, Phone number: <a href="tel:15340438330" target="_blank" >15340438330</a>
+      <p id="copyright">Copyright &copy; 2022 by TimDev, e-mail: <a href="mailto:madty31@gmail.com" target="_blank" >madty31@gmail.com</a>, Phone number: <a href="tel:15340438330" target="_blank" >15340438330</a>
+      </p>
     </footer>
     <script defer src="js/script.js"></script>
   </body>
