@@ -24,7 +24,7 @@ body{
 
 .card {
   border: 5px solid #222;
-  /* position: relative; */
+  position: relative;
 }
 
 .card-title {
@@ -121,4 +121,63 @@ body{
   list-style: square;
   margin-left: 2rem;
   line-height: 1.9;
+}
+
+/* Badge */
+.badge {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.badge-danger-sale {
+  background-color: red;
+  letter-spacing: .3rem;
+  position: absolute;
+  top: -2.2rem;
+  left: -5.5rem;
+  font-size: 1.7rem;
+}
+
+/* ----------- Colors -------------*/
+.colors {
+  margin: 1.5rem 0;
+}
+
+.color {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.color:last-child {
+  margin-right: 0;
+}
+
+.color-black {
+  background-color: black;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-red {
+  background-color: red;
+}
+
+.color-yellow {
+  background-color: yellow;
+}
+
+.color-green {
+  background-color: green;
+}
+
+.color-brown {
+  background-color: brown;
 }

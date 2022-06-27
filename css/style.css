@@ -34,7 +34,7 @@ article {
   background-color: #f8f8f8;
   padding: 2rem 4rem 2rem 4rem;
   margin-bottom: 6rem;
-  height: 8rem;
+  /* height: 8rem; */
   display: flex;
   align-items: center;
   justify-content:space-between
@@ -43,6 +43,7 @@ article {
 /* Post header */
 .post-hearder {
   margin-bottom: 3rem;
+  position: relative;
 }
 
  /* Aside */
@@ -52,6 +53,7 @@ aside {
   border-bottom: 5px solid #1098ad;
   padding: 5rem 0;
   width: 50rem;
+  margin-bottom: 5rem;
 }
 
 #author {
@@ -61,7 +63,7 @@ aside {
 }
 
 #copyright {
-  font-style: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .related-author {
@@ -80,11 +82,18 @@ aside {
 
 .navbar_items {
   list-style: none;
+  text-align: center;
 }
+
 .navbar_link {
   display: inline-block;
   margin-right: 2rem;
 }
+
+.navbar_link:last-child {
+  margin-right: 0;
+}
+
 .navbar_dropdown-link {
   display: none;
 }
@@ -95,13 +104,47 @@ aside {
   font-weight: bold;
 }
 
+footer {
+  text-align: center;
+}
+
 footer p {
-  font-style: 1.6rem;
+  font-size: 1.6rem;
 }
 
 
 nav {
   font-size: 1.8rem;
+}
+
+/* -------------- PSEUDO ELEMENTS ------------*/
+h1::first-letter {
+  font-style: normal;
+  margin-right: .5rem;
+}
+
+/* h2::first-letter {
+  font-size: 6rem;
+} */
+
+/*Adjacent siblings*/
+h3 + p::first-line {
+  /* color: red; */
+}
+
+/* Pseudo Elements: After Element */
+h2::after {
+  content: "TOP";
+  display: inline-block;
+  position: absolute;
+  right: -2.5rem;
+  top: -2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: .5rem 1.5rem;
+  background-color: #ffe70e;
+  color: #444;
+  font-weight: bolder;
 }
 
 h1, h2, h3, h4, p, li {
@@ -122,23 +165,24 @@ h1 {
 }
 
 h2 {
-  font-style: 4rem;
+  font-size: 4rem;
   margin-bottom: 3rem;
+  position: relative;
 }
 
 h3 {
-  font-style: 3rem;
+  font-size: 3rem;
   margin: 4rem 0 2rem 0;
 }
 
 h4 {
-  font-style: 2rem;
+  font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
 }
 
 p {
-  font-style: 2.2rem;
+  font-size: 2.2rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
 }
@@ -148,7 +192,7 @@ ul, ol {
 }
 
 li {
-  font-style: 2rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -186,6 +230,49 @@ a:active {
   width: 100%;
   height: auto;
 }
+
+.related-img {
+  width: 7.5rem;
+  height: 7.5rem;
+  margin-right: 1rem;
+}
+
+/* ------------ Icon Heart --------------*/
+.btn {
+  cursor: pointer;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.btn-like {
+  font-size: 2.2rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn-like:hover {
+  background-color: #f8f8f8;
+}
+
+.like {
+  padding-left: .75rem;
+  font-weight: bold;
+}
+
+.icon-heart {
+  width: 3rem;
+  height: 3rem;
+  outline: 2px solid rgb(133, 1, 1);
+
+  fill: red;
+
+}
+
 /* ----------Resolving conflicts-----------*/
 /* #copyright {
   color: red;
