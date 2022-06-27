@@ -20,6 +20,90 @@ body {
   border-top: 1rem solid #1098ad;
 }
 
+.container {
+  width: 80rem;
+  margin: 0 auto;
+}
+
+article {
+  margin-bottom: 6rem;;
+}
+
+/* Main header */
+.main-header {
+  background-color: #f8f8f8;
+  padding: 2rem 4rem 2rem 4rem;
+  margin-bottom: 6rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content:space-between
+}
+
+/* Post header */
+.post-hearder {
+  margin-bottom: 3rem;
+}
+
+ /* Aside */
+aside {
+  background-color: #f8f8f8;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 5rem 0;
+  width: 50rem;
+}
+
+#author {
+  font-style: italic;
+  font-size: 1.8rem;
+  
+}
+
+#copyright {
+  font-style: 1.6rem;
+}
+
+.related-author {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: block;
+}
+
+.related {
+  list-style: none;
+}
+
+.navbar {
+
+}
+
+.navbar_items {
+  list-style: none;
+}
+.navbar_link {
+  display: inline-block;
+  margin-right: 2rem;
+}
+.navbar_dropdown-link {
+  display: none;
+}
+  
+/* -------------Link styling-------------- */
+.related a:link {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+footer p {
+  font-style: 1.6rem;
+}
+
+
+nav {
+  font-size: 1.8rem;
+}
+
 h1, h2, h3, h4, p, li {
   font-family: sans-serif;
   color: #444;
@@ -59,10 +143,6 @@ p {
   margin-bottom: 1.5rem;
 }
 
-nav {
-  font-size: 1.8rem;
-}
-
 ul, ol {
   margin-left: 5rem;
 }
@@ -79,69 +159,6 @@ li:last-child {
 
 li:nth-child(even) {
   /*font-weight: bold;*/
-}
-
-article {
-  margin-bottom: 6rem;;
-}
-
-/* Main header */
-.main-header {
-  background-color: #f8f8f8;
-  padding: 2rem 4rem 2rem 4rem;
-  margin-bottom: 6rem;
-}
-
-/* Post header */
-.post-hearder {
-  margin-bottom: 3rem;
-}
-
- /* Aside */
-aside {
-  background-color: #f8f8f8;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-  padding: 5rem 0;
-}
-
-#author {
-  font-style: italic;
-  font-size: 1.8rem;
-  
-}
-
-#copyright {
-  font-style: 1.6rem;
-}
-
-.related-author {
-  font-size: 1.8rem;
-  font-weight: bold;
-  display: block;
-}
-
-.related {
-  list-style: none;
-}
-
-
-
-.navbar_items {
-  list-style: none;
-}
-.navbar_link {
-  display: inline-block;
-  margin-right: 2rem;
-}
-.navbar_dropdown-link {
-  display: none;
-}
-  
-/* -------------Link styling-------------- */
-.related a:link {
-  font-size: 2rem;
-  font-weight: bold;
 }
 
 a:link {
@@ -165,7 +182,10 @@ a:active {
   font-style: italic;
 }
 /* ----------LVHA-----------*/
-
+.post-img {
+  width: 100%;
+  height: auto;
+}
 /* ----------Resolving conflicts-----------*/
 /* #copyright {
   color: red;
@@ -182,7 +202,3 @@ a:active {
 footer p {
   color: green;
 } */
-
-footer p {
-  font-style: 1.6rem;
-}
