@@ -15,14 +15,20 @@ body {
   color: #444;
   box-sizing: border-box;
   font-family: sans-serif;
-  padding: 2rem;
+  /* padding: 2rem; */
   line-height: 1.9;
+  border-top: 1rem solid #1098ad;
 }
 
 h1, h2, h3, h4, p, li {
   font-family: sans-serif;
   color: #444;
 }
+
+h2, h3, h4 {
+  color: #1098ad;  
+}
+
 
 h1 {
   color: #1098ad;
@@ -33,10 +39,12 @@ h1 {
 
 h2 {
   font-style: 4rem;
+  margin-bottom: 3rem;
 }
 
 h3 {
   font-style: 3rem;
+  margin: 4rem 0 2rem 0;
 }
 
 h4 {
@@ -48,28 +56,53 @@ h4 {
 p {
   font-style: 2.2rem;
   line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+nav {
+  font-size: 1.8rem;
+}
+
+ul, ol {
+  margin-left: 5rem;
 }
 
 li {
   font-style: 2rem;
+  margin-bottom: 1rem;
 }
 
-footer p {
-  font-style: 1.6rem;
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
 }
 
+li:nth-child(even) {
+  /*font-weight: bold;*/
+}
+
+article {
+  margin-bottom: 6rem;;
+}
+
+/* Main header */
 .main-header {
   background-color: #f8f8f8;
+  padding: 2rem 4rem 2rem 4rem;
+  margin-bottom: 6rem;
 }
 
+/* Post header */
+.post-hearder {
+  margin-bottom: 3rem;
+}
+
+ /* Aside */
 aside {
   background-color: #f8f8f8;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-}
-
-h2, h3, h4 {
-  color: #1098ad;  
+  padding: 5rem 0;
 }
 
 #author {
@@ -92,13 +125,7 @@ h2, h3, h4 {
   list-style: none;
 }
 
-li:last-child {
-  font-style: italic;
-}
 
-li:nth-child(even) {
-  /*font-weight: bold;*/
-}
 
 .navbar_items {
   list-style: none;
@@ -108,7 +135,7 @@ li:nth-child(even) {
   margin-right: 2rem;
 }
 .navbar_dropdown-link {
-  /* display: none; */
+  display: none;
 }
   
 /* -------------Link styling-------------- */
@@ -156,6 +183,6 @@ footer p {
   color: green;
 } */
 
-nav {
-  font-size: 1.8rem;
+footer p {
+  font-style: 1.6rem;
 }
