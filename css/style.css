@@ -12,13 +12,16 @@ html {
 
 body {
   font-size: 1.6rem;
+  color: #444;
   box-sizing: border-box;
-  font-family: serif;
+  font-family: sans-serif;
   padding: 2rem;
+  line-height: 1.9;
 }
 
 h1, h2, h3, h4, p, li {
   font-family: sans-serif;
+  color: #444;
 }
 
 h1 {
@@ -55,9 +58,24 @@ footer p {
   font-style: 1.6rem;
 }
 
+.main-header {
+  background-color: #f8f8f8;
+}
+
+aside {
+  background-color: #f8f8f8;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+h2, h3, h4 {
+  color: #1098ad;  
+}
+
 #author {
   font-style: italic;
   font-size: 1.8rem;
+  
 }
 
 #copyright {
@@ -67,10 +85,19 @@ footer p {
 .related-author {
   font-size: 1.8rem;
   font-weight: bold;
+  display: block;
 }
 
 .related {
   list-style: none;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(even) {
+  /*font-weight: bold;*/
 }
 
 .navbar_items {
@@ -81,5 +108,54 @@ footer p {
   margin-right: 2rem;
 }
 .navbar_dropdown-link {
-  display: none;
-}/*# sourceMappingURL=style.css.map */
+  /* display: none; */
+}
+  
+/* -------------Link styling-------------- */
+.related a:link {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: #777 */
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: underline wavy orangered;
+  font-weight: bold;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+/* ----------LVHA-----------*/
+
+/* ----------Resolving conflicts-----------*/
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+} */
+
+nav {
+  font-size: 1.8rem;
+}

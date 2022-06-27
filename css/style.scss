@@ -2,14 +2,12 @@
 @import "base/base";
 @import "base/utilities";
 
+@import "components/article";
+@import "components/navbar";
+
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/aside";
-
-@import "components/article";
-@import "components/navbar";
-//
-
 
 @import "abstracts/fonctions";
 @import "abstracts/mixins";
@@ -21,4 +19,4 @@
 @import "pages/challenge-2";
 @import "pages/javascript";
 @import "pages/portfolio";
-//@import "pages/";
+

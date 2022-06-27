@@ -6,5 +6,6 @@
   "editor.tabSize": 2,
   "editor.tabCompletion": "on",
   "editor.formatOnType": true,
-  "editor.formatOnSaveMode": "modifications"
+  "editor.formatOnSaveMode": "modifications",
+  "editor.linkedEditing": true
 }

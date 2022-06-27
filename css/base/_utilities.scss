@@ -2,7 +2,7 @@
 
 h1, h2, h3, h4, p, li {
   font-family: sans-serif;
-  color: $color-text-grey;
+  color: #686868
 }
 
 h1,
@@ -62,4 +62,10 @@ footer p {
   list-style: none;
 }
 
+li :last-child {
+  font-style: italic;
+}
 
+li:nth-child(even) {
+  /*font-weight: bold;*/
+}
