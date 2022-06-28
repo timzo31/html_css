@@ -161,15 +161,15 @@ body{
 
 /* ------------- FLOAT --------------*/
 .card-img {
-  width: 24rem;
-  height: 24rem;
+  width: 25rem;
+  height: 25rem;
   float: left;
-  margin-right: 2rem;
+  margin-right: 2.5rem;
 }
 
 .float_center {
   float: left;
-  width: 24rem;
+  width: 24.3rem;
 }
 
 .float_price-shipping {
@@ -203,5 +203,5 @@ body{
 .card-details {
   margin: .5rem 2rem 1rem 0;
   float: right;
-  width: 24rem;
+  width: 24.3rem;
 }
