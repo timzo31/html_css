@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header clearfix">
         <h1 class="logo">📘 TimDev</h1>
         <nav class="navbar">
           <ul class="navbar_items">
@@ -45,7 +45,7 @@
       <article>
         <header class="post-hearder">
           <h2>The Basic Language of the Web: HTML</h2>
-          <img src="../../img/laura-jones.jpg" alt="Laura-Jones" />
+          <img src="../../img/laura-jones.jpg" alt="Laura-Jones" class="author-img"/>
           <p id="author">
             Posted by <strong>Laura Jones</strong> on Monday, June 21<sup
               >st</sup
@@ -54,12 +54,6 @@
           </p>
 
           <img src="../../img/post-img.jpg" alt="Posted image" class="post-img"/>
-
-          <button class="btn btn-like">
-            <svg class="icon-heart">
-              <use xlink:href="../../img/icon.svg#icon-heart"></use>
-            </svg> <i class="like">Like</i>
-          </button>
         </header>
         <div class="content">
           <p>
@@ -136,6 +130,12 @@
         <p class="copyright text" id="copyright">Copyright &copy; 2022 by TimDev, e-mail: <a href="mailto:madty31@gmail.com" target="_blank" >madty31@gmail.com</a>, Phone number: <a href="tel:15340438330" target="_blank" >15340438330</a>
         </p>
       </footer>
+
+      <button class="btn btn-like">
+        <svg class="icon-heart">
+          <use xlink:href="../../img/icon.svg#icon-heart"></use>
+        </svg> <i class="like">Like</i>
+      </button>
     </div>
 
     <script defer src="../../js/float.js"></script>
