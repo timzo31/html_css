@@ -103,7 +103,11 @@ dist
 # TernJS port file
 .tern-port
 
-css/style.css.map
-css/style.scss
-
+Fundamentals/css/style.css.map
+Fundamentals/css/style.scss
+Fundamentals/css/abstracts
+Fundamentals/css/base
+Fundamentals/css/components
+Fundamentals/css/layouts
+Fundamentals/css/pages
 
