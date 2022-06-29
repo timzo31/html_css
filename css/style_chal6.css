@@ -36,10 +36,6 @@ body{
   /* margin: 1.5rem 0; */
 }
 
-.card-body {
-  margin: 1.5rem 0;
-}
-
 .btn {
   outline: none;
   border: none;
@@ -50,7 +46,7 @@ body{
 .btn-info {
   text-decoration: underline;
   background-color: transparent;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 2rem 0;
   cursor: pointer;
 }
 
@@ -75,6 +71,8 @@ body{
   background-color: #000;
   padding: 1rem 2rem;
   width: 100%;
+
+  grid-column: 1 / -1;
   
 }
 
@@ -91,7 +89,12 @@ body{
 }
 
 .card-details {
-  margin-bottom: 1rem;
+  
+}
+
+.card-img {
+  width: 25rem;
+  height: 25rem;
 }
 
 .list_items {
@@ -120,19 +123,15 @@ body{
 }
 
 /* ----------- Colors -------------*/
-.colors {
-  margin: 1.5rem 0;
-}
+
 
 .color {
   width: 2.5rem;
   height: 2.5rem;
-  display: inline-block;
-  margin-right: 1rem;
 }
 
 .color:last-child {
-  margin-right: 0;
+
 }
 
 .color-black {
@@ -159,49 +158,54 @@ body{
   background-color: brown;
 }
 
-/* ------------- FLOAT --------------*/
-.card-img {
-  width: 25rem;
-  height: 25rem;
-  float: left;
-  margin-right: 2.5rem;
-}
-
-.float_center {
-  float: left;
-  width: 24.3rem;
+/* ------- CSS-GRID ------- */
+.content {
+  display: grid;
+  grid-template-columns: 25rem 1fr 1fr;
+  /* grid-template-rows: 1fr 5rem; */
+  column-gap: 3rem;
 }
 
 .float_price-shipping {
-  float: left;
-  width: 100%;
-  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.colors {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.card-body {
+  margin: 1.5rem 0;
+  display: flex;
+
 }
 
 .card-price {
   font-weight: bolder;
   font-size: 2rem;
-  margin-bottom: 2rem;
-  float: left;
+  margin-bottom: 0;
 }
 
 .free-shipping {
-  margin-bottom: 1rem;
+  display: block;
   color: #777;
   font-size: 1.2rem;
   text-transform: uppercase;
-  float: right;
-  margin-top: .7rem;
 }
 
 .card-description {
   font-size: 1.4rem;
-  clear: both;
-  width: 100%;
 }
 
+.detail_center {
+  flex: 1;
+}
 .card-details {
-  margin: .5rem 2rem 1rem 0;
-  float: right;
-  width: 24.3rem;
+  margin-top: 2rem;
+  flex: 1;
 }
