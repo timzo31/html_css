@@ -31,10 +31,14 @@ body {
 }
 .el--2 {
   background-color: orangered;
+  grid-column: 1/-1;
+  grid-row: 2/3;
 }
 .el--3 {
   background-color: green;
   height: 15rem;
+  align-self: center;
+  justify-self: center;
 }
 .el--4 {
   background-color: goldenrod;
@@ -44,12 +48,16 @@ body {
 }
 .el--6 {
   background-color: steelblue;
+  /* grid-column: 1/-1;
+  grid-row: 3/3; */
 }
 .el--7 {
   background-color: yellow;
 }
 .el--8 {
   background-color: crimson;
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 
 .container--1 {
@@ -58,11 +66,13 @@ body {
   background-color: #ddd;
   font-size: 30px;
   margin: 40px;
+  height: 50rem;
 
   /* CSS GRID */
   display: grid;
-  grid-template-columns: 20rem 20rem 10rem 10rem;
-  grid-template-rows: 30rem 20rem;
+  /* grid-template-columns: 1fr repeat(2, 1fr) auto; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
 
   column-gap: 2rem;
   row-gap: 4rem;
@@ -79,4 +89,14 @@ body {
   height: 600px;
 
   /* CSS GRID */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 25rem 10rem;
+  gap: 4rem;
+
+  /* Aligning tracks inside container */
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
 }
