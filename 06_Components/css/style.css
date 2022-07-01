@@ -14,7 +14,7 @@ body {
   font-size: 1.6rem;
   color: #444;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.9;
   border-top: 1rem solid #1098ad;
 }
@@ -86,10 +86,12 @@ footer {
 
 .navbar_link {
   margin-right: 2rem;
+  text-transform: uppercase;
 }
 
 .navbar_link:last-child {
   margin-right: 0;
+  
 }
 
 .input-search {
@@ -181,6 +183,71 @@ a:active {
 .btn--small:link,
 .btn--small:visited {
   color: #fff;
+}
+
+/* /////////////// ACCORDION /////////////////*/
+.accordion {
+  width: 90%;
+  margin: 4rem auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.item {
+  /* border-top: .7rem solid #087f5b; */
+  padding: 2.4rem;
+  box-shadow: 0 0 3.2rem rgba(0,0,0,.1);
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 2.4rem;
+  row-gap: 3.2rem;
+  align-items: center;
+}
+
+.number,
+.text {
+  font-size: 2.4rem;
+  font-weight: 500;
+  /* color: #087f5b; */
+}
+
+.number {
+  color: #ced4da;
+}
+
+.item-active {
+  border-top: .7rem solid #087f5b;
+
+}
+
+.item-active .hidden-box{
+  display: block;
+}
+
+.item-active .number,
+.item-active .text {
+  color: #087f5b;
+}
+
+.chevron {
+  stroke: #087f5b;
   
+}
+
+.hidden-box {
+  grid-column: 2;
+  display: none;
+}
+
+.hidden-box p {
+  margin-bottom: 2rem;
+}
+
+.hidden-box ul {
+  margin-left: 3rem;
+  color: #868e96;
 }
 
