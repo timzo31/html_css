@@ -189,6 +189,7 @@ a:active {
 .accordion {
   width: 90%;
   margin: 4rem auto;
+  padding-top: 2.5rem;;
 
   display: flex;
   flex-direction: column;
@@ -211,7 +212,7 @@ a:active {
 .text {
   font-size: 2.4rem;
   font-weight: 500;
-  /* color: #087f5b; */
+  cursor: pointer;
 }
 
 .number {
@@ -220,7 +221,6 @@ a:active {
 
 .item-active {
   border-top: .7rem solid #087f5b;
-
 }
 
 .item-active .hidden-box{
@@ -251,3 +251,47 @@ a:active {
   color: #868e96;
 }
 
+.overlay {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .2);
+  z-index: 10;
+  backdrop-filter: blur(3px);
+} 
+
+.modal-accordion {
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+  height: 85vh;
+  width: 91rem;
+  background-color: #fff;
+  overflow: auto;
+}
+
+/* .modal-accordion:target {
+  opacity: 1;
+  visibility: visible;
+} */
+
+.btn-close-modal-accordion {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #168fa2;
+  cursor: pointer;
+}
+
+.hidden {
+  /* display: none; */
+}
