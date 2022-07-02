@@ -293,5 +293,130 @@ a:active {
 }
 
 .hidden {
-  /* display: none; */
+  display: none;
+}
+
+/*----- CAROUSEL COMPONENT -----*/
+.carousel {
+  position: relative;
+  background-color: #087f5b;
+  padding: 4rem 4.8rem 4rem 10.6rem;
+  margin: 8rem auto;
+  box-shadow: 0 1.2rem 2.5rem rgba(0, 0, 0, .2);
+  border-radius: 1rem;
+  display: flex;
+  /* align-items: center; */
+  gap: 9.6rem;
+}
+
+.slider-img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 2rem;
+  display: inline-block;
+  transform: scale(1.5);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, .25)
+}
+
+.testimonial {
+  padding: 2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #e6fcf5;
+  margin-bottom: 3rem;
+  
+  position: relative;
+}
+
+.testimonial-text::first-letter {
+  margin-left: 3rem;
+}
+
+.testimonial-text::before {
+  content: '\201c';
+  position: absolute;
+  left: 0;
+  top: -2rem;
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #e6fcf5;
+  margin-right: 2rem;
+}
+
+.testimonial-text::after {
+  content: '\201d';
+  position: absolute;
+  right: 0;
+  
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #e6fcf5;
+  margin-bottom: 3rem;
+}
+
+.testimonial-author {
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-bottom: .4rem;
+  color: #c3fae8;
+}
+
+.testimonial-job {
+  font-size: 1.2rem;
+  margin-bottom: .4rem;
+  color: #c3fae8;
+}
+
+/* CONTROLS */
+.btn-carousel {
+  border: none;
+  background-color: #fff;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  /* display: flex;
+  align-items: center;
+  justify-items: center;  */
+}
+
+.chevron-left {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.chevron-right {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 3.2rem);
+  display: flex;
+  gap: 1.2rem;
+}
+
+.dot {
+  border: 2px solid #087f5b;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+  /* outline: 1px solid #087f5b; */
+}
+
+.dot-active {
+  background-color: #087f5b;
 }
