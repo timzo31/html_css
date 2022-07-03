@@ -2,10 +2,10 @@
 
 ///////////// SLIDERS CONTROL /////////////////
 
-const slider = function () {
+// const slider = function () {
   const slides = document.querySelectorAll(".slide");
 
-  const slider = document.querySelector(".slider");
+  // const slider = document.querySelector(".slider");
 
   const btnLeft = document.querySelector(".btn_slider-left");
   const btnRight = document.querySelector(".btn_slider-right");
@@ -90,6 +90,5 @@ const slider = function () {
       activeDot(slide);
     }
   });
-};
-
-slider();
+// };
+// slider();

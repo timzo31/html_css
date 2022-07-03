@@ -1,0 +1,44 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #444;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  line-height: 1.9;
+  border-top: 1rem solid #1098ad;
+  display: flex;
+  justify-content: center;
+}
+
+/* ------- TABLE STYLING ---------*/
+table {
+  width: 80rem;
+  margin: 10rem;
+  border: 1px solid #343a40;
+  border-collapse: collapse;
+}
+
+tr {
+
+}
+
+td,
+th {
+  border: 1px solid #343a40
+}
+
+th {
+  color: white;
+  background-color: #099268;
+}
