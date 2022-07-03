@@ -3,8 +3,6 @@
 /////////// CAROUSEL ////////////
 
 const carouselModal = document.querySelector(".carousel-modal");
-const controlLeft = document.querySelector(".chevron-left");
-const controlRight = document.querySelector(".chevron-right");
 const dots = document.querySelector(".modal_dots");
 const dot = document.querySelectorAll("modal_dot");
 const dotActive = document.querySelector(".modal_dot--active");
@@ -42,7 +40,32 @@ btnOpenCarouselModal.addEventListener("click", function (e) {
   openModalCarousel();
 });
 
+///////////// SLIDERS CONTROL /////////////////
+const slides = document.querySelectorAll(".slide");
+const slider = document.querySelector("sliders");
 
+const btnLeft = document.querySelector(".chevron-left");
+const btnRight = document.querySelector(".chevron-right");
+
+let curSlide = 0;
+maxSlide = slides.length;
+
+slider.style.transform = "scale(.5) translateX(-800px)";
+slider.style.overflow = "visible";
+
+slides.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
+
+//Next Slide
+btnRight.addEventListener("click", function () {
+  if (curSlide === maxSlide) {
+    curSlide = 0;
+  } else {
+    curSlide++;
+  }
+  slides.forEach(
+    (s, i) => (s.style.transform = `translateX(${100 * (i - curSlide)}%)`)
+  );
+});
 
 
 

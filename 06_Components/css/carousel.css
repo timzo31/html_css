@@ -1,0 +1,106 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #444;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  line-height: 1.9;
+  border-top: 1rem solid #1098ad;
+}
+
+/* ------------ Icons --------------*/
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  background-color: orange;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 78rem;
+  height: 44rem;
+  position: relative;
+  background-color: red;
+  
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 42rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 1s;
+}
+
+slide > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn_slider {
+  border: none;
+  border-radius: 50%;
+  z-index: 100;
+  width: 5.5rem;
+  height: 5.5rem;
+  position: absolute;
+  top: 50%;
+  background-color: rgb(221, 221, 221);
+  cursor: pointer;
+}
+
+.btn_slider-left {
+  left: 0;
+  transform: translate(0, -50%)
+}
+
+.btn_slider-right {
+  right: 0;
+  transform: translate(0, -50%)
+}
+
+.dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -3px);
+
+  display: flex;
+  gap: 1.5rem;
+}
+
+.dot {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.dot-active {
+  background-color: #fff;
+}
+

@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/style.css">
 
   <title>Components & Elements</title>
@@ -33,37 +34,48 @@
       </nav>
     </header>
 
-    <div class="carousel">
-        <!-- <div class="slide">
-          <img src="img/slide-1.jpg" alt="slide-1">
-          <img src="img/slide-2.jpg" alt="slide-2">
-          <img src="img/slide-3.jpg" alt="slide-3">
-        </div> -->
-      <img src="img/maria.jpg" alt="maria de almeida" class="slider-img">
-      <blockquote class="testimonial">
-        <p class="testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, labore nihil at dicta dolor fugit alias beatae impedit, ratione cupiditate modi tempora doloremque praesentium ipsa sapiente.</p>
-        <p class="testimonial-author">Maria de Almeida</p>
-        <p class="testimonial-job">Seniour Product Manager at EDP Commercial</p>
-      </blockquote>
+    <section class="carousel">
+      <div class="slider">
+        <div class="slide slide--1">
+          <img src="img/slide-1.JPG" alt="slide-1">
+        </div>
+        <div class="slide slide--2">
+          <img src="img/slide-2.JPG" alt="slide-2">
+        </div>
+          
+        <div class="slide slide--3">
+          <img src="img/slider-3.JPG" alt="slide-3">
+        </div>
+        <div class="slide slide--4">
+          <img src="img/slider-4.JPG" alt="slide-4">
+        </div>
 
-      <button class="btn-carousel chevron-left">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-      <button class="btn-carousel chevron-right">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-      <div class="dots">
-        <button class="dot dot-active">&nbsp;</button>
-        <button class="dot">&nbsp;</button>
-        <button class="dot">&nbsp;</button>
-        <button class="dot">&nbsp;</button>
+        <!-- <img src="img/maria.jpg" alt="maria de almeida" class="slider-img">
+        <blockquote class="testimonial">
+          <p class="testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, labore nihil at dicta dolor fugit alias beatae impedit, ratione cupiditate modi tempora doloremque praesentium ipsa sapiente.</p>
+          <p class="testimonial-author">Maria de Almeida</p>
+          <p class="testimonial-job">Seniour Product Manager at EDP Commercial</p>
+        </blockquote> -->
+
+        <button class="btn_slider btn_slider-left">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button class="btn_slider btn_slider-right">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+        <div class="dots">
+          <button class="dot dot-active">&nbsp;</button>
+          <button class="dot">&nbsp;</button>
+          <button class="dot">&nbsp;</button>
+          <button class="dot">&nbsp;</button>
+        </div>
       </div>
-    </div>
-    
+    </section>
+
     <section id="elements">
       <figure class="element">
         <img src="img/element-2.png" alt=""  width="250" height="250"/>
@@ -234,32 +246,70 @@
       </div>
     </div>
 
-    <div class="modal modal-carousel hidden-car" id="modal-carousel">
+    <div class="modal modal-carousel hidden" id="modal-carousel">
       <button class="btn-close-modal-carousel close-modal">&times;</button>
-      <div class="carousel-modal">
-        <!-- <div class="slide">
-          <img src="img/slide-1.jpg" alt="slide-1">
-          <img src="img/slide-2.jpg" alt="slide-2">
-          <img src="img/slide-3.jpg" alt="slide-3">
-        </div> -->
-        <img src="img/maria.jpg" alt="maria de almeida" class="modal-img">
-        <blockquote class="modal_testimonial">
-          <p class="modal_testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, labore nihil at dicta dolor fugit alias beatae impedit, ratione cupiditate modi tempora doloremque praesentium ipsa sapiente.</p>
-          <p class="modal_testimonial-author">Maria de Almeida</p>
-          <p class="modal_testimonial-job">Seniour Product Manager at EDP Commercial</p>
-        </blockquote>
+      <div class="carousel-modal sliders">
+        <div class="slider">
+          <img src="img/slider-1.JPG" alt="slide-1">
+        </div>
+        <div class="slider">
+          <img src="img/slider-2.JPG" alt="slide-2">
+        </div>
+          
+        <div class="slider">
+          <img src="img/slider-3.JGP" alt="slide-3">
+        </div>
+        <div class="slider">
+          <img src="img/slider-4.JPG" alt="slide-4">
+        </div>
+      </div>
+        <!-- <div class="slider slider--1">
+          <img src="img/maria.jpg" alt="maria de almeida" class="modal-img">
+          <blockquote class="modal_testimonial">
+            <p class="modal_testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, labore nihil at dicta dolor fugit alias beatae impedit, ratione cupiditate modi tempora doloremque praesentium ipsa sapiente.</p>
+            <p class="modal_testimonial-author">Maria de Almeida</p>
+            <p class="modal_testimonial-job">Seniour Product Manager at EDP Commercial</p>
+          </blockquote>
+        </div>
 
-        <button class="btn-carousel chevron-left">
+        <div class="slider slider--2">
+          <img src="img/hero.jpg" alt="maria de almeida" class="modal-img">
+          <blockquote class="modal_testimonial">
+            <p class="modal_testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, labore nihil at dicta dolor fugit alias beatae impedit, ratione cupiditate modi tempora doloremque praesentium ipsa sapiente.</p>
+            <p class="modal_testimonial-author">Hero de Almeida</p>
+            <p class="modal_testimonial-job">Seniour Product Manager at EDP Commercial</p>
+          </blockquote>
+        </div>
+
+        <div class="slider slider--3">
+          <img src="img/maria.jpg" alt="maria de almeida" class="modal-img">
+          <blockquote class="modal_testimonial">
+            <p class="modal_testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, labore nihil at dicta dolor fugit alias beatae impedit, ratione cupiditate modi tempora doloremque praesentium ipsa sapiente.</p>
+            <p class="modal_testimonial-author">Maria de Almeida</p>
+            <p class="modal_testimonial-job">Seniour Product Manager at EDP Commercial</p>
+          </blockquote>
+        </div>
+
+        <div class="slider slider--4">
+          <img src="img/hero.jpg" alt="maria de almeida" class="modal-img">
+          <blockquote class="modal_testimonial">
+            <p class="modal_testimonial-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, labore nihil at dicta dolor fugit alias beatae impedit, ratione cupiditate modi tempora doloremque praesentium ipsa sapiente.</p>
+            <p class="modal_testimonial-author">Hero de Almeida</p>
+            <p class="modal_testimonial-job">Seniour Product Manager at EDP Commercial</p>
+          </blockquote>
+        </div> -->
+
+        <button class="btn-carousel modal_chevron-left">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
-        <button class="btn-carousel chevron-right">
+        <button class="btn-carousel modal_chevron-right">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
           </svg>
         </button>
-        <div class="dots">
+        <div class="modal_dots">
           <button class="modal_dot dot-active">&nbsp;</button>
           <button class="modal_dot">&nbsp;</button>
           <button class="modal_dot">&nbsp;</button>
