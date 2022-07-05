@@ -20,3 +20,63 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.pagination {
+  margin-top: 20rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.page_link:link,
+.page_link:visited {
+  text-decoration: none;
+  border-radius: 50%;
+  color: #343a40;
+  font-size: 1.8rem;
+  font-weight: bold;
+  height: 3.6rem;
+  width: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.page_link:hover,
+.page_link:active {
+  background-color: #099268;
+  color: #fff;
+}
+
+.btn_pagination {
+  border: 1px solid #099268;
+  width: 4.8rem;
+  height: 4.8rem;
+  background: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.page_link.page_link-active {
+  background-color: #099268; 
+  color: #fff;
+}
+
+.btn_pagination:hover{
+  background-color: #099268; 
+}
+
+.btn_pagination:hover .icon-btn{
+  stroke: #fff;
+}
+
+.dots {
+  color: #868e96;
+}
+
+.icon-btn {
+  width: 2.4rem;
+  height: 2.4rem;
+  stroke: #099268;
+}
