@@ -386,3 +386,96 @@ body {
   opacity: 0;
   visibility: hidden;
 } 
+
+/* MODAL PAGINATION START */
+.modal_pagination {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 75%;
+  background-color: #fff;
+  z-index: 10;
+  border-radius: 1rem;
+  padding: 4rem 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_close_modal-pagination{
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+}
+
+.btn_close_modal-pagination:hover{
+  color: #087f5b;
+  cursor: pointer;
+}
+
+.pagination{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+.page_link:link,
+.page_link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #444;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page_link:hover,
+.page_link:active {
+  color: #fff;
+  background-color: #087f5b;
+}
+
+.page_link.page_link-active {
+  background-color: #087f5b;
+}
+
+.dots{
+  color: #444;
+}
+
+.btn_page{
+  background: none;
+  width: 4.8rem;
+  height: 4.8rem;
+  border: 1px solid #087f5b;
+  border-radius: 50%;
+}
+
+.btn_page:hover {
+  background-color: #087f5b;
+}
+
+.btn_page:hover .btn_icon {
+  stroke: #fff;
+}
+
+.btn_icon{
+  width: 2.4rem;
+  height: 2.4rem;
+  stroke: #087f5b;
+}
+/* MODAL PAGINATION ENDED */
+
