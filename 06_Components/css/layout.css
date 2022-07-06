@@ -1,0 +1,24 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", Sans-serif;
+  font-size: 1.6rem;
+  color: #444;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 6rem 50rem 1fr 30rem;
+
+}
