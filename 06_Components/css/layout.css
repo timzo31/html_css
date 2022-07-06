@@ -14,11 +14,81 @@ body {
   font-family: "Rubik", Sans-serif;
   font-size: 1.6rem;
   color: #444;
+  text-align: center;
+  font-weight: bold;
 }
 
 .container {
   width: 100%;
   display: grid;
-  grid-template-columns: 6rem 50rem 1fr 30rem;
-
+  grid-template-columns: 8rem 40rem 1fr 25rem;
+  grid-template-rows: 8rem 100vh;
+  
 }
+
+nav, menu, section, main, aside {
+  padding-top: 2.4rem;
+}
+
+menu {
+  background-color: #4e29bd;
+  grid-column: 2 / -1;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0 4rem;
+}
+
+nav {
+  background-color: #343a40;
+  grid-row: 1 / -1;
+  color: #fff;
+}
+
+section {
+  background-color: #e9ecef;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  gap: 1.5rem;
+  
+  overflow: scroll;
+}
+
+aside {
+  background-color: #e9ecef;
+}
+
+.btn {
+  padding: .8rem 1.2rem;
+  font-size: 1.6rem;
+  border: none;
+  background-color:#7048e8;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+}
+
+.btn:nth-child(4) {
+  margin-right: auto;
+}
+
+.btn:last-child {
+  color: red;
+}
+
+.email {
+  /* width: 100%; */
+  height: 9.6rem;
+  background-color: #ced4da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
