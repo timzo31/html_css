@@ -193,3 +193,91 @@
   line-height: 1.6;
   /* margin-bottom: 3rem; */
 }
+
+
+/* *********************************** */
+    /* FEATURED IN SECTION */
+/* *********************************** */
+.section-featured {
+  padding: 4.8rem 3.2rem 0;
+}
+
+
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.75px;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0%);
+  opacity: .5;
+}
+
+
+/* *********************************** */
+    /* MEALS SECTION */
+/* *********************************** */
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal-card {
+  width: 25rem;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  stroke: #e67e22;
+}
+
+.meal-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
+}
+
+.meal-body {
+
+}
+.meal-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 3.2rem;
+}
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.meal-attribute {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.diet-box {
+  width: 25rem;
+  background-color: #fdf2e9;
+}
+
+.diet-list {
+
+}
