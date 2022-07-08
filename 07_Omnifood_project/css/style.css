@@ -508,12 +508,45 @@
   font-weight: 700;
   margin-bottom: 1.6rem;
 }
-.feature-text {
 
+.feature-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
 
 /* *********************************** */
     /* CALL TO ACTION SECTION */
 /* *********************************** */
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #cf711f; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,.075);
+  border-radius: 1.1rem;
+
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  /* background-image: url(data) */
+}
+
+.cta-img-box {
+  background-image: linear-gradient(to right bottom, 
+  rgba(235, 151, 78, 0.3), 
+  rgba(230, 125, 34, 0.3)),
+  url('../img/eating.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-img {
+  width: 100%;
+}
 
 
