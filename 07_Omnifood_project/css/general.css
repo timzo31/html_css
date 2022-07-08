@@ -24,6 +24,7 @@ Paragrapgh default: 1.6
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 -- 04 COLORS:
+  #45260a;
 
 Primary: #e67e22
 
@@ -157,6 +158,34 @@ body {
   letter-spacing: .75px;
 }
 
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: flex-end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+  
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  display: inline-block;
+  border-radius: 1rem;
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  /* Put transition on original "state" */
+  /* transition: background-color .3s; */
+  transition: all .3s;
+}
+
 .btn:link,
 .btn:visited {
   text-decoration: none;
@@ -165,6 +194,11 @@ body {
   padding: 1.6rem 3.2rem; 
   display: inline-block;
   border-radius: 1rem;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 
   /* Put transition on original "state" */
   /* transition: background-color .3s; */
@@ -232,6 +266,13 @@ body {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: .8rem; */
+  box-shadow: 0 0 0 .8rem rgba(230, 125, 34, 0.5);
 }
 
 /* HELPER/SETTINGS CLASSES */
