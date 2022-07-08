@@ -533,13 +533,25 @@
 }
 
 .cta-text-box {
-  /* background-image: url(data) */
+  color: #45260a;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta .heading-secondary {
+  color: #45260a;
+  margin-bottom: 3.2rem;
 }
 
 .cta-img-box {
   background-image: linear-gradient(to right bottom, 
-  rgba(235, 151, 78, 0.3), 
-  rgba(230, 125, 34, 0.3)),
+  rgba(235, 151, 78, 0.35), 
+  rgba(230, 125, 34, 0.35)),
   url('../img/eating.jpg');
   background-size: cover;
   background-position: center;
@@ -548,5 +560,37 @@
 .cta-img {
   width: 100%;
 }
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.cta-form input {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+}
+
+.cta-form select {
+  
+}
+
+.cta-form button {
+  
+}
+
+/* .cta-form {
+
+} */
 
 
