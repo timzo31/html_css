@@ -29,23 +29,52 @@
 
 
 /* *********************************** */
-    /* BELOW 1344px (Smaller desktop) */
+    /* BELOW 1200px (Landscape Tablets) */
 /* *********************************** */
 
 @media(max-width: 75em) {
-  .section-hero {
-    background-color: orangered;
+  html {
+    font-size: 56.25%;
   }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    column-gap: 4.8rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+
 }
 
 
 /* *********************************** */
-    /* BELOW 1344px (Smaller desktop) */
+    /* BELOW 600px (Mobile) */
 /* *********************************** */
 
 @media(max-width: 37.5em) {
   .section-hero {
-    border: 2rem dashed red;
-    background-color: blue;
+    
   }
 }
