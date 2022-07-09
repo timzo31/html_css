@@ -11,6 +11,7 @@ Bold: 700
 Default: 1
 Small: 1.05
 Paragrapgh default: 1.6
+  Large: 1.8
 
 - Letter Spacing: 
 -0.5px
@@ -177,7 +178,6 @@ body {
 .btn--form:hover {
   background-color: #fff;
   color: #555;
-  
 }
 
 .btn {
@@ -266,8 +266,8 @@ body {
 .list-item {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  /* line-height: 1.9; */
+  gap: 1.6rem;
+  line-height: 1.2;
   font-size: 1.8rem;
 }
 
