@@ -1,0 +1,51 @@
+/* *********************************** */
+    /* BELOW 1344px (Smaller desktop) */
+/* *********************************** */
+
+@media(max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+}
+
+
+
+
+/* -- 02 SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+ */
+
+/* -- 03 FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+
+/* *********************************** */
+    /* BELOW 1344px (Smaller desktop) */
+/* *********************************** */
+
+@media(max-width: 75em) {
+  .section-hero {
+    background-color: orangered;
+  }
+}
+
+
+/* *********************************** */
+    /* BELOW 1344px (Smaller desktop) */
+/* *********************************** */
+
+@media(max-width: 37.5em) {
+  .section-hero {
+    border: 2rem dashed red;
+    background-color: blue;
+  }
+}
