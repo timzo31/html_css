@@ -11,3 +11,15 @@
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
+
+//  MAKE MOBILE NAVIGATION WORK
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const navOpen = document.querySelector(".nav-open");
+const headerEl = document.querySelector(".header");
+
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+
