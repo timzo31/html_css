@@ -1,14 +1,27 @@
-// function checkFlexGap() {
-//   var flex = document.createElement("div");
-//   flex.style.display = "flex";
-//   flex.style.flexDirection = "column";
-//   flex.style.rowGap = ".1rem";
+////////////////////////////////////////////////////////
+// FIXING FLEXBOX GAP PROPERTY MISSING IN SOME SAFARI VERSIONS
+function checkFlexGap() {
+  var flex = document.createElement("div");
+  flex.style.display = "flex";
+  flex.style.flexDirection = "column";
+  flex.style.rowGap = ".1rem";
 
-//   flex.appendChild(document.createElement("div"));
-//   flex.appendChild(document.createElement("div"));
-// }
+  flex.appendChild(document.createElement("div"));
+  flex.appendChild(document.createElement("div"));
 
-// DATE 
+  document.body.appendChild(flex);
+  var isSupported = flex.scrollHeight === 1;
+  flex.parentNode.removeChild(flex);
+  console.log(isSupported);
+
+  if (!isSupported) {
+    document.body.classList.add("no-flexbox-gap");
+  }
+  checkFlexGap();
+}
+/////////////////////////////////////////////////////
+
+// DATE
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
@@ -19,7 +32,6 @@ const btnNavEl = document.querySelector(".btn-mobile-nav");
 const navOpen = document.querySelector(".nav-open");
 const headerEl = document.querySelector(".header");
 
-
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
@@ -28,7 +40,7 @@ btnNavEl.addEventListener("click", function () {
 ////////////////////////////////////////////////////
 // SMOOTH SCROLLING EFFECTS
 
-const allLinks = document.querySelectorAll('a:link');
+const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach((link) =>
   link.addEventListener("click", function (e) {
