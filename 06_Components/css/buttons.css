@@ -419,47 +419,119 @@
 }
 
 .row3-c3 {
-
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .btn-free-trial {
-
+  border: 1px solid #936d5f;
+  outline: none;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  color: #eee;
+  background-color: #1872f0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s;
 }
 
 .btn-talk-to-us {
-
+  /* border: 1px solid #936d5f; */
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  color: #0e5edd;
+  font-weight: 600;
+  box-shadow: .2rem .2rem .2rem .2rem rgba(135, 135, 135, 0.5) ;
+  cursor: pointer;
+  transition: all .3s;
 }
 
 .row4-c3 {
-
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .btn-login {
-
+  border: 1px solid #bdbdbd;
+  outline: none;
+  background-color: #fff;
+  border-radius: .5rem;
+  padding: 1.5rem 3rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #444;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s;
 }
 
 .btn-try-it-free {
-
+  border: 1px solid #579e83;
+  outline: none;
+  background-color: #fff;
+  border-radius: .5rem;
+  padding: 1.5rem 3rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #eee;
+  background-color: #068d76;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s;
 }
 
 .row5-c3 {
-
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .btn-go-to-file {
-
+  border: 1px solid #bdbdbd;
+  outline: none;
+  background-color: #fff;
+  border-radius: .4rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  color: #444;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s;
 }
 
 .btn-download-code {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 
+  border: none;
+  outline: none;
+  background-color: #096b18;
+  border-radius: .4rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.8rem;
+  color: #eee;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s;
 }
 
 .download-icon {
-
+  width: 2rem;
+  height: 2rem;
 }
 
 .caret_down-icon {
-
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 
