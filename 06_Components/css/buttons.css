@@ -281,7 +281,7 @@
   font-weight: 500;
   padding: 1rem 2.5rem;
   background-color: #c50303;
-  box-shadow: 1px 1px 1px 1.5rem rgba(244, 130, 130, .1);
+  box-shadow: .5rem 0 4rem rgba(244, 130, 130);
   cursor: pointer;
   transition: all .3s;
 }
@@ -290,44 +290,132 @@
 }
 
 .row4-c2 {
-
+  background-color:#afddeb
 }
 
 .btn-subscribe {
-
+  border: none;
+  outline: none;
+  border-radius: 10rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background: none;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.2);
+  outline: 2px solid #222;
+  cursor: pointer;
+  transition: all .3s;
+}
+.row4-c2 .btn-subscribe:hover {
+  
 }
 
 .row5-c2 {
-
+  background-color: #010;
 }
 
 .btn-learn-more {
-
+  border: none;
+  outline: none;
+  /* border-radius: 10rem; */
+  padding: 1.5rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #efefef;
+  background: none;
+  box-shadow: 0 .5rem 1.5rem rgba(255, 255, 255, 0.2);
+  outline: 2px solid #777;
+  cursor: pointer;
+  transition: all .3s;
+}
+.row5-c2 .btn-learn-more:hover {
+  color: #222;
+  background-color: #777;
 }
 
 /* COLUMN 3 */
 .row1-c3 {
-
+  display: flex;
+  justify-items: center;
+  gap: .5rem;
+  flex-shrink: 1;
+  background: linear-gradient(165deg,
+    #8a8080, #8f6e6e, #b89191,
+    #8a8080, #8f6e6e, #b89191,
+    #8a8080, #8f6e6e, #b89191
+  )
 }
 
 .btn-shop-mat {
-
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 1.5rem 1.5rem;
+  background-color: #07aeb4;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: #fff;
+  transition: all .3s;
+  cursor: pointer;
+}
+.row1-c3 .arrow-right-icon {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
 }
 
 .btn-watch-video {
-
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 1.5rem 1.5rem;
+  background: none;
+  transition: all .3s;
+  cursor: pointer;
 }
 
 .row2-c3 {
-
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(45deg,
+  #eee, #f2f2f2);
 }
 
 .btn-try-for-free {
-
+  border: 1px solid #936d5f;
+  outline: none;
+  background-color: orangered;
+  border-radius: .4rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #f3f3f3;
+  cursor: pointer;
+  transition: all .3s;
+}
+.row2-c3 .btn-try-for-free:hover {
+  background-color: #fff;
+  color: #222;
 }
 
 .btn-see-pricing {
-
+  border: 1px solid #936d5f;
+  outline: none;
+  background-color: #fff;
+  border-radius: .4rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  color: #444;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s;
+}
+.row2-c3 .btn-see-pricing:hover {
+  background-color: orangered;
+  color: #eee;
 }
 
 .row3-c3 {
