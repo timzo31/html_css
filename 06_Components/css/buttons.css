@@ -97,6 +97,7 @@
   padding: 2rem;
   display: flex;
   justify-content: center;
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.1);
 }
 
 .row1-c1 {
@@ -114,6 +115,7 @@
   background-color:rgb(90, 188, 218);
   border: none;
   cursor: pointer;
+  transition: all .3s;
 }
 
 .arrow-right-icon {
@@ -135,7 +137,13 @@
   gap: 1rem;
   border: none;
   outline: none;
-  box-shadow: 1px 2px 0 rgba(0,0,0, .01);
+  box-shadow: 1px 2px 4rem rgba(0,0,0, .01);
+  cursor: pointer;
+  transition: all .3s;
+}
+.row2-c1 .btn-free-consult:hover {
+  background-color: #f0f0f0;
+  color: #141414;
 }
 
 .arrow-right {
@@ -177,6 +185,7 @@
   font-size: 1.6rem;
   padding: 1.5rem 3.5rem;
   border-radius: 0.5rem;
+  cursor: pointer;
   transition: all .5s;
 }
 .btn-add-to-chrome:hover {
@@ -200,6 +209,8 @@
   border: none;
   outline: none;
   background-color: #0f8b5b;
+  cursor: pointer;
+  transition: all .3s;
 }
 .row5-c1 .btn-download-app:hover {
   background-color:#09ad6e;
@@ -216,7 +227,21 @@
 }
 
 .btn-req-demo {
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  color: white;
 
+  font-weight: 500;
+  padding: 1.5rem 3rem;
+  background-color: #017de3;
+  box-shadow: 1px 3px 40px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all .3s;
+}
+.row1-c2 .btn-req-demo:hover {
+  background-color:#0349aa
 }
 
 .row2-c2 {
@@ -224,7 +249,22 @@
 }
 
 .btn-get-started {
+  border: none;
+  outline: none;
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  font-size: 1.6rem;
+  color: white;
 
+  font-weight: 600;
+  padding: 2rem 4.5rem;
+  background-color: #020796;
+  box-shadow: .5rem 1rem 3rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all .3s;
+}
+.row2-c2 .btn-get-started:hover {
+  background-color: #1a21f7;
 }
 
 .row3-c2 {
@@ -232,7 +272,21 @@
 }
 
 .btn-req-demo-red {
-
+  border: none;
+  outline: none;
+  border-radius: 10rem;
+  font-size: 1.4rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 1rem 2.5rem;
+  background-color: #c50303;
+  box-shadow: 1px 1px 1px 1.5rem rgba(244, 130, 130, .1);
+  cursor: pointer;
+  transition: all .3s;
+}
+.row3-c2 .btn-req-demo-red:hover {
+  background-color: #8e1414
 }
 
 .row4-c2 {
