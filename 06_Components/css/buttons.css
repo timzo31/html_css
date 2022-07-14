@@ -95,6 +95,8 @@
 .row {
   background-color: white;
   padding: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .row1-c1 {
@@ -119,19 +121,47 @@
   height: 2rem;
   
 }
-.row2-c1 {
 
+.row2-c1 {
+  
 }
 
 .btn-free-consult {
+  background-color: #000;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: none;
+  outline: none;
+  box-shadow: 1px 2px 0 rgba(0,0,0, .01);
+}
 
+.arrow-right {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .row3-c1 {
-
+  background-color: black;
 }
 .btn-floorplans {
-
+  background-color: #f7c37f;
+  border: none;
+  outline: none;
+  padding: 1.7rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  cursor: pointer;
+  transition: all .3s;
+}
+.row3-c1 .btn-floorplans:hover {
+  background-color: black;
+  box-shadow: 0 0 0 2px #f7c37f;
+  color: white;
 }
 
 .row4-c1 {
@@ -139,7 +169,19 @@
 }
 
 .btn-add-to-chrome {
-
+  border: none;
+  outline: none;
+  background: linear-gradient(45deg,
+  #2bbb95, #2da29e);
+  color: white;
+  font-size: 1.6rem;
+  padding: 1.5rem 3.5rem;
+  border-radius: 0.5rem;
+  transition: all .5s;
+}
+.btn-add-to-chrome:hover {
+  transform: scaleX(1.1);
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2)
 }
 
 .row5-c1 {
@@ -147,11 +189,25 @@
 }
 
 .btn-download-app {
-
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 1.5rem 3rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #fbfbfb;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  background-color: #0f8b5b;
+}
+.row5-c1 .btn-download-app:hover {
+  background-color:#09ad6e;
 }
 
 .apple-icon {
-
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 /* COLUMN 2 */
