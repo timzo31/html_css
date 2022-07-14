@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/buttons.css">
   <link rel="stylesheet" href="css/style.css">
 
   <title>Components & Elements</title>
@@ -88,9 +89,9 @@
       <figure class="element">
         <img src="img/element-2.png" alt=""  width="250" height="250"/>
         <div class="el-box">
-          <h3><span>01</span> Text</h3>
+          <h3><span>02</span> Buttons</h3>
           <p>&nbsp;</p>
-          <a href="#modal-text" class="btn btn--small">View Element</a>
+          <a href="#modal-text" class="btn btn--small btn-open-modal-button">View Element</a>
         </div>
       </figure>
       <figure class="element">
@@ -374,6 +375,136 @@
   <div class="overlay hidden"></div>
   <div class="overlay-car hidden-car"></div>
 
+  <!-- MODAL BUTTONS -->
+  <div class="modal modal_buttons">
+    <div class="buttons-modal">
+
+      <div class="buttons-container">
+        <header class="header_btnEl">
+          <h1 class="h1"><span>02</span> Buttons</h1>
+          <p class="type">A elements</p>
+        </header>
+        <div class="btn_group btn_group-col--1">
+          <div class="row row1">
+            <button class="btn btn-add-to-cart">Add to cart</button>
+          </div>
+
+          <div class="row row2">
+            <button class="btn btn-free-consult">Get a Free consultation</button>
+          </div>
+
+          <div class="row row3">
+            <button class="btn btn-floorplans">FloorPlans</button>
+          </div>
+
+          <div class="row row4">
+            <button class="btn btn-add-to-chrome">Add to Chrome</button>
+          </div>
+
+          <div class="row row5">
+            <button class="btn btn-download-app">
+              <ion-icon class="apple-icon" name="logo-apple"></ion-icon>
+              <span>Download App</span>
+            </button>
+          </div>
+        </div>
+        <div class="btn_group btn_group-col--2">
+          <div class="row row1-c2">
+            <button class="btn btn-req-demo">Request a Demo</button>
+          </div>
+
+          <div class="row row2-c2">
+            <button class="btn btn-get-started">Get Started</button>
+          </div>
+
+          <div class="row row3-c2">
+            <button class="btn btn-req-demo-red">Request a Demo</button>
+          </div>
+
+          <div class="row row4-c2">
+            <button class="btn btn-subscribe">Subscribe</button>
+          </div>
+
+          <div class="row row5-c2">
+            <button class="btn btn-learn-more">Learn More</button>
+          </div>
+        </div>
+        <div class="btn_group btn_group-col--3">
+          <div class="row row1-c3">
+            <button class="btn btn-shop-mat">Shop Mattresses &rarr;</button>
+            <button class="btn btn-watch-video">Watch video</button>
+          </div>
+
+          <div class="row row2-c3">
+            <button class="btn btn-try-for-free">Try for Free</button>
+            <button class="btn btn-see-pricing">See pricing</button>
+          </div>
+
+          <div class="row row3-c3">
+            <button class="btn btn-free-trial">Start free trial</button>
+            <button class="btn btn-talk-to-us">Talk to us</button>
+          </div>
+
+          <div class="row row4-c3">
+            <button class="btn btn-login">Login</button>
+            <button class="btn btn-try-it-free">Try it free</button>
+          </div>
+
+          <div class="row row5-c3">
+            <button class="btn btn-go-to-file">Go to file</button>
+          
+            <button class="btn btn-download-code">
+              <ion-icon class="download-icon" name="download-outline"></ion-icon>
+              <span>Code</span>
+              <ion-icon class="caret_down-icon" name="caret-down-outline"></ion-icon>
+            </button>
+           
+          </div>
+        </div>
+
+        <div class="btn_group btn_group-col--4">
+          <div class="row row1-c4">
+            <button class="btn btn-try-now">STry now for <span class="price"><i>$</i>3.50</span></button>
+            <button class="btn btn-view-pro-details">View Product details</button>
+          </div>
+
+          <div class="row row2-c4">
+            <button class="btn btn-ship-here">Ship here</button>
+            <div class="row_btns">
+              <button class="btn btn-edit">
+                Edit
+              </button>
+              <button class="btn btn-delete">
+                <ion-icon class="trash-icon" name="trash-outline"></ion-icon>
+                <span>Delete</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="row row3-c4">
+            <button class="btn btn-move-to-cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <span>Move to cart</span>
+            </button>
+            <button class="btn btn-move-to-favorites">
+              <ion-icon class="favorite-icon" name="heart-outline"></ion-icon>
+              <span>Move to favorites</span>
+            </button>
+            <button class="btn btn-remove">
+              <ion-icon class="trash-icon" name="trash-outline"></ion-icon>
+              <span>Remove</span>
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn_close_modal-buttons">&times;</button>
+  </div>
+  <div class="overlay-but hidden"></div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="js/accordion.js"></script>
   <script src="js/carousel.js"></script>
   <script src="js/components.js"></script>

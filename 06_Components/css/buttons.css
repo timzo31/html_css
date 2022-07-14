@@ -1,0 +1,297 @@
+.modal_buttons {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90vh;
+  background-color: #000;
+  box-shadow: 0 0 0 1rem rgba(0,0,0, .01);
+  padding-top: 5rem;
+  color: white;
+}
+
+.btn_close_modal-buttons {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.btn_close_modal-buttons:hover {
+  color: #e18802;
+}
+
+.buttons-modal {
+
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+  /* row-gap : 2rem; */
+}
+
+.header_btnEl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orange;
+  grid-column: 1 / -1;
+  height: 7rem;
+}
+
+.header_btnEl .h1 {
+  color: #222;
+  margin-left: 1.5rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.header_btnEl .type {
+  margin-right: 1rem;
+  padding: 0 2rem;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: #222;
+}
+
+.btn_group{
+
+
+}
+.btn_group-col--1 {
+
+}
+
+.btn_group-col--2 {
+
+}
+
+.btn_group-col--3 {
+
+}
+
+.btn_group-col--4 {
+
+}
+
+/* COLUMN 1 */
+
+.row {
+  background-color: white;
+  padding: 2rem;
+}
+
+.btn-add-to-cart {
+
+}
+
+.btn-free-consult {
+
+}
+
+.btn-floorplans {
+
+}
+
+.btn-add-to-chrome {
+
+}
+
+.btn-download-app {
+
+}
+
+.apple-icon {
+
+}
+
+/* COLUMN 2 */
+.row1-c2 {
+
+}
+
+.btn-req-demo {
+
+}
+
+.row2-c2 {
+
+}
+
+.btn-get-started {
+
+}
+
+.row3-c2 {
+
+}
+
+.btn-req-demo-red {
+
+}
+
+.row4-c2 {
+
+}
+
+.btn-subscribe {
+
+}
+
+.row5-c2 {
+
+}
+
+.btn-learn-more {
+
+}
+
+/* COLUMN 3 */
+.row1-c3 {
+
+}
+
+.btn-shop-mat {
+
+}
+
+.btn-watch-video {
+
+}
+
+.row2-c3 {
+
+}
+
+.btn-try-for-free {
+
+}
+
+.btn-see-pricing {
+
+}
+
+.row3-c3 {
+
+}
+
+.btn-free-trial {
+
+}
+
+.btn-talk-to-us {
+
+}
+
+.row4-c3 {
+
+}
+
+.btn-login {
+
+}
+
+.btn-try-it-free {
+
+}
+
+.row5-c3 {
+
+}
+
+.btn-go-to-file {
+
+}
+
+.btn-download-code {
+
+}
+
+.download-icon {
+
+}
+
+.caret_down-icon {
+
+}
+
+
+/* COLUMN 4 */
+.row1-c4 {
+
+}
+
+.btn-try-now {
+
+}
+
+.price {
+
+}
+
+.btn-view-pro-details {
+
+}
+
+.row2-c4 {
+
+}
+
+.btn-ship-here {
+
+}
+
+.row_btns {
+
+}
+
+.btn-edit {
+
+}
+
+.btn-delete {
+
+}
+
+.trash-icon {
+
+}
+
+.row3-c4 {
+
+}
+
+.btn-move-to-cart {
+
+}
+
+.cart-icon {
+
+}
+
+.btn-move-to-favorites {
+
+}
+
+.favorite-icon {
+
+}
+
+.btn-remove {
+
+}
+
+.trash-icon {
+
+}
+
+
