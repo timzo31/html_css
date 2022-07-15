@@ -3,12 +3,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 100%;
   height: 90vh;
   background-color: #000;
   box-shadow: 0 0 0 1rem rgba(0,0,0, .01);
   padding-top: 5rem;
   color: white;
+  overflow: scroll;
+  z-index: 20;
 }
 
 .btn_close_modal-buttons {
@@ -28,7 +30,8 @@
 }
 
 .buttons-modal {
-
+  /* width: 100%;   */
+  /* padding: 1rem; */
 }
 
 .buttons-container {
@@ -38,7 +41,7 @@
   /* row-gap : 2rem; */
   padding: 2rem 1rem;
   background-color: #efefef;
-  height: 100%;
+  height: 90%;
   /* justify-content: center; */
 }
 
@@ -190,7 +193,7 @@
 }
 .btn-add-to-chrome:hover {
   transform: scaleX(1.1);
-  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2)
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .row5-c1 {
@@ -241,7 +244,7 @@
   transition: all .3s;
 }
 .row1-c2 .btn-req-demo:hover {
-  background-color:#0349aa
+  background-color:#0349aa;
 }
 
 .row2-c2 {
@@ -286,11 +289,11 @@
   transition: all .3s;
 }
 .row3-c2 .btn-req-demo-red:hover {
-  background-color: #8e1414
+  background-color: #8e1414;
 }
 
 .row4-c2 {
-  background-color:#afddeb
+  background-color:#afddeb;
 }
 
 .btn-subscribe {
@@ -732,4 +735,16 @@
   color: #444;
 }
 
+.overlay-but {
+  background-color: rgba(0, 0, 0);
+  backdrop-filter: blur(3px);
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
 
+.hidden-but {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
