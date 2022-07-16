@@ -47,3 +47,25 @@ btnCloseModalButtons.addEventListener("click", closeButtonModal);
 
 
 /////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////
+//////  SLIDERS ///////////
+///////////////////////////////
+const btnOpenModalSliders = document.querySelector(".btn-open-modal-sliders");
+const modalSliders = document.querySelector('.modal-sliders');
+const btnCloseModalSliders = document.querySelector('.btn_close_modal-sliders');
+
+
+// Sliders btns
+const btnSliderLeft1 = document.querySelector('.btn-slider-left1');
+const btnSliderLeft2 = document.querySelector('.btn-slider-left2');
+const btnSliderLeft3 = document.querySelector('.btn-slider-left13');
+const btnSliderLeft4 = document.querySelector('.btn-slider-left4');
+
+const btnSliderRight1 = document.querySelector('.btn-slider-right1');
+const btnSliderRight2 = document.querySelector('.btn-slider-right2');
+const btnSliderRight3 = document.querySelector('.btn-slider-right3');
+const btnSliderRight4 = document.querySelector('.btn-slider-right4');
+
+///////
+

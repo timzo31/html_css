@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/sliders.css">
   <link rel="stylesheet" href="css/style.css">
 
   <title>Components & Elements</title>
@@ -124,9 +125,9 @@
       <figure class="element">
         <img src="img/element-2.png" alt=""  width="250" height="250"/>
         <div class="el-box">
-          <h3><span>01</span> Text</h3>
+          <h3><span>01</span> Sliders</h3>
           <p>&nbsp;</p>
-          <a href="#" class="btn btn--small">View Element</a>
+          <a href="#" class="btn btn--small btn-open-modal-sliders">View Element</a>
         </div>
       </figure>
     </section>
@@ -251,17 +252,17 @@
       <button class="btn-close-modal-carousel close-modal">&times;</button>
       <div class="slider">
         <div class="slide">
-          <img src="img/slider-1.JPG" alt="slide-1">
+          <img class="slide-img" src="img/slider-1.JPG" alt="slide-1">
         </div>
         <div class="slide">
-          <img src="img/slider-2.JPG" alt="slide-2">
+          <img class="slide-img" src="img/slider-2.JPG" alt="slide-2">
         </div>
           
         <div class="slide">
-          <img src="img/slider-3.JGP" alt="slide-3">
+          <img class="slide-img" src="img/slider-3.JGP" alt="slide-3">
         </div>
         <div class="slide">
-          <img src="img/slider-4.JPG" alt="slide-4">
+          <img class="slide-img" src="img/slider-4.JPG" alt="slide-4">
         </div>
 
         <!-- <div class="slider slider--1">
@@ -511,6 +512,103 @@
     <button class="btn btn_close_modal-buttons">&times;</button>
   </div>
   <div class="overlay-but hidden-but"></div>
+
+<!-- Modal SLIDERS -->
+  <div class="modal modal-sliders">
+    <button class="btn btn_close_modal-sliders">&times;</button>
+    <header>
+      <h1 class="heading-sliders"><span>05</span> Sliders</h1>
+      <p>components</p>
+    </header>
+    <div class="sliders-container">
+      <div class="slider slider1">
+        <div class="slides-container">
+          <div class="slide slide-1a">
+
+          </div>
+          <div class="slide slide-1b">
+            
+          </div>
+          <div class="slide slide-1c">
+            
+          </div>
+          <div class="slide slide-1d">
+            <img src="img/sliders/etty.jpg" alt="Etty profile photo" class="slide-img">
+
+            <div class="testimonial">
+              <p class="testimonial_text">
+                The amount of time I've been able to save with Airtable has been immesearable, and the more we've worked with it, the more applications we've found. Now the first question I ask is How do we Airtable this?
+              </p>
+
+              <div class="related">
+                <div class="related_left">
+                  <p class="author">Etty fidèle</p>
+                <p class="profession">Senior Product Marketing Manager</p>
+                </div>
+                <div class="related_right">
+                  <a href="#" class="company">Frame.io</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <button class="btn_slider btn-slider-left1">
+            <ion-icon class="btn_arrow-left" name="chevron-back-outline"></ion-icon>
+          </button>
+          <button class="btn_slider btn-slider-right1">
+            <ion-icon class="btn_arrow-right" name="chevron-forward-outline"></ion-icon>
+          </button>
+          <div class="dots"></div>
+        </div>
+      </div>
+
+      <div class="slider slider2">
+        <div class="slide">
+
+        </div>
+        <div class="slide">
+          
+        </div>
+        <div class="slide">
+          
+        </div>
+        <div class="slide">
+          
+        </div>
+      </div>
+
+      <div class="slider slider3">
+        <div class="slide">
+
+        </div>
+        <div class="slide">
+          
+        </div>
+        <div class="slide">
+          
+        </div>
+        <div class="slide">
+          
+        </div>
+      </div>
+
+      <div class="slider slider4">
+        <div class="slide">
+
+        </div>
+        <div class="slide">
+          
+        </div>
+        <div class="slide">
+          
+        </div>
+        <div class="slide">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
