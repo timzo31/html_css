@@ -1,0 +1,48 @@
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem; 
+}
+
+.accordion {
+  display: grid;
+  grid-template-columns: 20rem auto;
+  row-gap: 2rem;
+  /* padding: 2rem; */
+  box-shadow: 0 0 0 1.5rem #dff6c7;
+}
+
+.accordion-active .accordion-title {
+  border-top: 2px solid #fff;
+
+}
+
+
+.accordion-title {
+  padding: 1rem 2rem;
+  border: none;
+  background: none;
+  background-color: #016231;
+  font-size: 2.3rem;
+  color: #fff;
+  font-family: serif;
+  font-weight: 600;
+}
+
+.panel {
+  padding: 3rem 4rem 2rem;
+  border-top: none;
+  background-color: #bddfbfe7;
+}
+

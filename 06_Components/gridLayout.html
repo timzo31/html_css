@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Grid_Layouts</title>
+  <style>
+    *, ::before, ::after { 
+      padding:0; margin: 0; box-sizing: inherit;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-size: 1.6rem;
+      font-family: serif;
+      color: #222;
+    }
+
+    .mt {
+      margin-top: 5rem;
+      padding: 1rem;
+    }
+
+    .grid-cols-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 2rem;
+    }
+
+    .card {
+      background-color: beige;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 1px 1px 1.5rem rgba(0, 0, 0, .1);
+    }
+
+    .card:hover {
+      transform: translateY(-.7rem);
+    }
+
+    .card_img {
+      min-width: 20rem;
+      /* width: 20rem; */
+      height: 15rem;
+    }
+
+    .card_body {
+      padding: 1rem 2rem;
+      line-height: 1.5;
+    }
+
+    .list {
+      list-style: none;
+    }
+
+    .list-item {
+
+    }
+
+    .icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="grid-cols-3 mt">
+    <div class="card">
+      <div class="card_img">
+        <img src="" alt="">
+      </div>
+      <div class="card_body">
+        <ul class="list">
+          <li class="list_item">
+            <ion-icon name="pricetag-outline" class="icon"></ion-icon>affordable price
+          </li>
+          <li class="list_item">
+            <ion-icon name="pricetag-outline" class="icon"></ion-icon>affordable price
+          </li>
+          <li class="list_item">
+            <ion-icon name="pricetag-outline" class="icon"></ion-icon>affordable price
+          </li>
+          <li class="list_item">
+            <ion-icon name="pricetag-outline" class="icon"></ion-icon>affordable price
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card_img">
+        <img src="" alt="">
+      </div>
+      <div class="card_body">
+        <ul class="list">
+          <li class="list_item">
+            <ion-icon name="pricetag-outline" class="icon"></ion-icon>affordable price
+          </li>
+          <li class="list_item">
+            <ion-icon name="pricetag-outline" class="icon"></ion-icon>affordable price
+          </li>
+          <li class="list_item">
+            <ion-icon name="pricetag-outline" class="icon"></ion-icon>affordable price
+          </li>
+          <li class="list_item">
+            <ion-icon name="pricetag-outline" class="icon"></ion-icon>affordable price
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card_img">
+        <img src="" alt="">
+      </div>
+      <div class="card_body">
+        <ul class="list">
+          <li class="list_item">
+            <ion-icon name="pricetag-outline" class="icon"></ion-icon>affordable price
+          </li>
+          <li class="list_item">
+            <ion-icon name="pricetag-outline" class="icon"></ion-icon>affordable price
+          </li>
+          <li class="list_item">
+            <ion-icon name="pricetag-outline" class="icon"></ion-icon>affordable price
+          </li>
+          <li class="list_item">
+            <ion-icon name="pricetag-outline" class="icon"></ion-icon>affordable price
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
