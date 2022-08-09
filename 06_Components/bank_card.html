@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bankcard.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="image-box">
+
+    </div>
+    <div class="form-box">
+      <form action="" method="post">
+        <div class="form_row">
+          <label for="cardholder" class="label_cardholder">cardholder Name</label>
+          <input type="text" name="cardholder" id="cardholder" class="input_cardholder">
+        </div>
+
+        <div class="form_row">
+          <label for="cardnumber" class="label_cardnumber">card Number</label>
+          <input type="text" name="cardnumber" id="cardnumber" class="input_cardnumber">
+        </div>
+
+        <div class="form_row">
+          <div class="expdate">
+            <label for="expdate" class="label_expdate">Exp. date (MM/YY)</label>
+            
+            <div class="input_expdate">
+              <input type="month" name="exp_month" id="exp_month" class="input_exp_month">
+              <input type="date" name="exp_date" id="exp_date" class="input_exp_date">
+            </div>
+
+          </div>
+
+          <div class="cvc_box">
+            <label for="cvc" class="label_cvc">CVC</label>
+            <input type="number" name="cvc" id="cvc" class="input_cvc">
+          </div>
+
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+  <script src="js/bankcard.js"></script>
+</body>
+</html>
